@@ -1,3 +1,2 @@
 # P-MB
-# Initial project
-# Landing Page
+Initial project - Landing Page
