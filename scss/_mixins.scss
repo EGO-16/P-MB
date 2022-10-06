@@ -1,0 +1,13 @@
+@mixin instanceElement($color) {
+	&:hover {
+		color: $color;
+	}
+
+	&:focus {
+		color: $color;
+	}
+
+	&:active {
+		color: $color;
+	}
+}

@@ -1,0 +1,100 @@
+@import "_variables";
+@import "_mixins";
+@import "_font";
+
+*,
+*:focus,
+*:active {
+	outline: none;
+	-webkit-appearance: none;
+}
+
+html {
+	width: 100vw;
+	overflow-x: hidden;
+}
+
+html,
+body,
+input {
+	position: relative;
+	font-family: "Nunito", sans-serif;
+	font-size: 12px;
+	font-weight: 300;
+	line-height: 100%;
+	outline: none;
+}
+
+//font-family: "PhosphatePro-Solid", sans-serif;
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	-webkit-appearance: none;
+}
+
+// css scrollbar
+body::-webkit-scrollbar {
+	//width: 4px; /* ширина scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+	//background: rgba(38, 70, 101, 1); /* цвет дорожки */
+}
+
+body::-webkit-scrollbar-thumb {
+	//background-color: $orange; /* цвет плашки */
+	//border-radius: 0; /* закругления плашки */
+	//border: 0; /* padding вокруг плашки */
+}
+
+
+ul,
+li {
+	list-style: none;
+}
+
+a {
+	transition: all ease 0.2s;
+	text-decoration: none;
+}
+
+input {
+	&:active,
+	&:focus {
+		outline: none;
+	}
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: 1440px;
+	justify-content: center;
+	-ms-grid-columns: 1fr 1440px 1fr;
+	display: -ms-grid;
+}
+
+header {
+	display: none;
+}
+
+#main {
+	position: relative;
+	.main-bear {
+	
+	}
+	.main-overlay {
+
+	}
+	.main-img {
+
+	}
+}

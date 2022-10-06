@@ -1,0 +1,150 @@
+header {
+	position: sticky;
+	position: -webkit-sticky;
+	display: block;
+	background: $blue;
+	z-index: 1049;
+	height: auto;
+	min-height: 66.6px;
+    width: 100%;
+	top: 0;
+	left: 0;
+	box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+}
+.header-wrap {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 7px 0;
+}
+.header-logo {
+	a {
+		img {
+			width: 72px;
+			height: 51px;
+		}
+	}
+}
+.header-right {
+	display: flex;
+	align-items: center;
+}
+.header-social {
+	margin-right: 50px;
+	ul {
+		display: flex;
+		align-items: center;
+		li {
+			margin-right: 25px;
+			&:last-child {
+				margin-right: 0;
+			}
+			a {
+				img {
+					width: 28px;
+					height: 28px;
+				}
+			}
+		}
+		.phone-number {
+			display: block;
+			margin-right: 50px;
+			color: #fff;
+			font-weight: 700;
+			font-size: 26px;
+			line-height: 100%;
+			padding-top: 6px;
+			cursor: default;
+		}
+
+		.phone-icon {
+			display: none;
+		}
+	}
+}
+.header-menu {
+	display: none;
+	padding: 15px 0;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	nav {
+		> ul {
+			> li {
+				width: 100%;
+				> a {
+					padding: 15px 20px 15px 10px;
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+					color: #fff;
+					font-size: 20px;
+					font-weight: 500;
+					opacity: 0.9;
+					transition: all ease 0.2s;
+
+					&:hover {
+						opacity: 1;
+					}
+				}
+			}
+			> li.menu-child {
+				> a {
+					transition: all ease 0.5s;
+					> img {
+						width: 16px;
+						transition: all ease 0.5s;
+					}
+				}
+				> ul {
+					padding: 0;
+					> li {
+						> a {
+							display: block;
+							color: #fff;
+							font-size: 18px;
+							font-weight: 500;
+							padding: 10px 0;
+							opacity: 0.9;
+							transition: all ease 0.2s;
+
+							&:hover {
+								opacity: 1;
+							}
+						}
+						
+					}
+				}
+				
+			}
+			> li.menu-child.active {
+				border-bottom: 1px solid rgba(255,255,255, 0.2);
+				padding-bottom: 10px;
+				margin-bottom: 10px;
+			}
+		}
+	}
+}
+.header-menu nav .accordeon > li.active > a {
+	background: $orange;
+	color: #fff;
+	padding: 20px 20px 20px 10px;
+	opacity: 1;
+
+	> img {
+		transform: rotate(180deg);
+	}
+}
+.header-menu nav .accordeon > li > ul {
+	display: none;
+	width: 100%;
+	padding: 7px 0;
+}
+.header-menu nav .accordeon > li.active > ul {
+	display: block;
+}
+.header-menu nav .accordeon > li > ul > li {
+	padding: 5px 30px;
+	text-decoration: none;
+	display: block;
+	color: #333;
+} 
